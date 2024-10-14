@@ -1,0 +1,23 @@
+ext {
+
+    // Sdk and tools
+    minSdkVersion = 21
+    targetSdkVersion = 30
+    compileSdkVersion =30
+
+    // App dependencies
+    supportLibraryVersion = '27.1.1'
+    support_lib_version = '27.1.1'
+
+    arouterCompiler = '1.2.0'
+
+
+    LIB_ROUTER =  'com.github.AndroidLee0316:router:support_1.0.0'
+    LIB_BASE ='com.github.AndroidLee0316:base:support_1.0.0'
+    LIB_NET = 'com.github.AndroidLee0316:zxs_net:support_2.0.0'
+    LIB_HYBRID = "com.zxs.lib:hybrid:1.0.0"
+    LIB_WIDGET = "com.zxs.lib:widget:1.0.0"
+    LIB_IMAGELOADER = 'com.zxs.lib:imaeLoader:1.0.0'
+    LIB_STATISTICS = 'com.zxs.lib:statistics:1.0.0'
+    LIB_STORAGE = 'com.zxs.lib:storage:1.0.0'
+}

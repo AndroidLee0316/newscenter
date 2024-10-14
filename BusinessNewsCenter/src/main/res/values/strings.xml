@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsCenter</string>
+
+    <string name="newscenter_strings_swipe_net_error_tip">没有连接网络，请稍后再试</string>
+
+    <string name="newscenter_swipe_refresh_num_tip">成功为您推荐%1$s条新内容</string>
+
+
+
+</resources>

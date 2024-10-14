@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newscenter_white_ffffff"
+    android:orientation="vertical">
+
+    <com.pasc.lib.widget.toolbar.PascToolbar
+        android:id="@+id/newscenter_common_fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/newscenter_white_ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:leftIcon="@drawable/newscenter_ic_gray_back"
+        app:title="新闻资讯"
+        app:titleColor="@color/newscenter_black_333333"
+        app:support_translucent_status_bar="true"
+        app:title_text_size="18sp" />
+
+    <LinearLayout
+        android:id="@+id/newscenter_common_wrap_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.pasc.lib.newscenter.tablayout.TabLayout
+            android:id="@+id/newscenter_common_fragment_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="1px"
+            android:visibility="gone"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/newscenter_tab_indicator_color"
+            app:tabIndicatorHeight="3dp"
+            app:tabLineOffset="15dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/newscenter_tab_selected_txt_color"
+            app:tabTextAppearance="@style/TabTextSize_15sp"
+            app:tabTextColor="@color/newscenter_tab_unselected_txt_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/newscenter_divide_line_color" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/newscenter_common_fragment_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/newscenter_view_empty_view"
+        layout="@layout/newscenter_include_net_error_layout"
+        android:visibility="gone" />
+
+
+</LinearLayout>

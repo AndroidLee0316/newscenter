@@ -1,0 +1,6 @@
+<resources>
+
+    <string name="newscenter_strings_net_error_tip">无法连接网络，请检查网络设置</string>
+    <string name="newscenter_strings_error_refresh_tip">点击刷新</string>
+    
+</resources>

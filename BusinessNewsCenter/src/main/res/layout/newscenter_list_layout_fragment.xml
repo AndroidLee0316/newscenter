@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/newscenter_view_container_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <com.pasc.lib.widget.viewcontainer.ViewContainer
+            android:id="@+id/newscenter_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.pasc.lib.widget.swiperefresh.PaSwipeRefreshLayout
+                android:id="@+id/newscenter_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/newscenter_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </com.pasc.lib.widget.swiperefresh.PaSwipeRefreshLayout>
+
+        </com.pasc.lib.widget.viewcontainer.ViewContainer>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/newscenter_list_error_view"
+        layout="@layout/newscenter_include_net_error_layout"
+        android:visibility="gone" />
+
+</LinearLayout>

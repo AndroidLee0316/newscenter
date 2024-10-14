@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/newscenter_white_ffffff"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/newscenter_list_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/newscenter_black_333333"
+                android:textSize="17sp"
+                tools:text="山花烂漫喜迎春，首届金钟花会开幕" />
+
+
+            <LinearLayout
+                android:id="@+id/newscenter_list_item_more_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/newscenter_list_item_img3_1"
+                    android:layout_width="109dp"
+                    android:layout_height="78dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="4dp"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/newscenter_list_item_img3_2"
+                    android:layout_width="109dp"
+                    android:layout_height="78dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="4dp"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/newscenter_list_item_img3_3"
+                    android:layout_width="109dp"
+                    android:layout_height="78dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="4dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="13dp"
+                android:paddingBottom="11dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/newscenter_list_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=""
+                    android:textColor="@color/newscenter_gray_999999"
+                    android:textSize="13sp"
+                    tools:text="2018-12-27" />
+
+                <TextView
+                    android:id="@+id/newscenter_list_item_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text=""
+                    android:textColor="@color/newscenter_gray_999999"
+                    android:textSize="13sp"
+                    tools:text="深圳新闻网" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/newscenter_list_item_img1"
+            android:layout_width="113dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="4dp"
+            android:src="@drawable/newscenter_net_error_shape_bg"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/newscenter_divide_line_color" />
+
+</LinearLayout>

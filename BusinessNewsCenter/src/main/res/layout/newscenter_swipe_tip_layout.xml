@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/newscenter_refresh_suc_bg_color"
+    android:layout_height="36dp">
+
+    <TextView
+        android:id="@+id/newscenter_swipe_refresh_num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/newscenter_refresh_suc_txt_color"
+        android:textSize="13sp"
+        tools:text="成功为您推荐5条新内容"
+        />
+
+</RelativeLayout>
